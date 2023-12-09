@@ -19,16 +19,17 @@ In fields HOSTNAMES and CHECK_INTERVAL_SECONDS in the previous code they are onl
 
 ## Usage (docker compose)
 ```
-name: cloudflare-list-ip
+name: cloudflare-ip-list
 services:
-    cloudflare-list-ip:
-        image: trebsoj/cloudflare-list-ip:latest
+    cloudflare-ip-list:
+        image: trebsoj/cloudflare-ip-list:latest
+        container_name: cloudflare-ip-list
         restart: always
         environment:
             - ACCOUNT_ID=[YOUR_ACCOUNT_ID]
             - LIST_ID=[YOUR_LIST_ID]
             - TOKEN=[YOUR_TOKEN]
-            - HOSTNAMES="docker.com example.com"
+            - HOSTNAMES=docker.com example.com
             - CHECK_INTERVAL_SECONDS=60
 
 ```
