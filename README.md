@@ -12,7 +12,7 @@ docker run \
     -e TOKEN=[YOUR_TOKEN] \
     -e HOSTNAMES="docker.com example.com" \
     -e CHECK_INTERVAL_SECONDS=60 \
-    trebsoj/docker-cloudflare-ip-list
+    trebsoj/cloudflare-ip-list
 
 ```
 In fields HOSTNAMES and CHECK_INTERVAL_SECONDS in the previous code they are only examples.
